@@ -30,7 +30,7 @@ CopyConfigs(){
 	mkdir -p ~/.config
 	
 	cp -rf ./Configs/.config/. ~/.config
-	cp -rf ./Config/.xinitrc ~/
+	cp -rf ./Configs/.xinitrc ~/
 	
 	chmod +x ~/.config/bspwm/bspwmrc
 	chmod +x ~/.config/polybar/launch.sh
