@@ -5,8 +5,8 @@ UpdateRepoDB(){
 
 InstallNeededPackages(){
 	echo "Install xorg"
-	sudo pacman --noconfirm -S xorg xorg-init
-	# sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb
+	#sudo pacman --noconfirm -S xorg xorg-init
+	sudo pacman --noconfirm -S xorg-server xorg-xinit xorg-xset xorg-xsetroot xorg-xrandr xorg-xrdb
 
 	echo "Install other packages"
 	sudo pacman --noconfirm -S bspwm sxhkd dmenu polybar picom xfce4-terminal gnu-free-fonts feh
@@ -31,12 +31,12 @@ CopyConfigs(){
 	cp -rf ./Configs/.config/. ~/.config
 	cp -rf ./Config/xinitrc ~/
 	chmod +x ~/.config/bspwm/bspwmrc
-	chmod +x ~/.configpolybar/launch.sh
+	chmod +x ~/.config/polybar/launch.sh
 }
 
 
 UpdateRepoDB
 InstallNeededPackages
-InstallYay
+#InstallYay
 
 CopyConfigs
