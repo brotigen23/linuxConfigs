@@ -18,3 +18,5 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 $HOME/.config/polybar/launch.sh
+
+feh --bg-fill ~/linuxConfigs/wallpaper/scenic-anime-girl-cityscape-sunset-anime-landscape.jpg
